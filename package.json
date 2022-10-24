@@ -1,0 +1,37 @@
+{
+  "name": "fst",
+  "version": "1.0.0",
+  "description": "You will make an API that plays the game called tic-tac-toe in the US, and called naughts and crosses in",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --experimental-specifier-resolution=node server/index.js",
+    "dev": "nodemon --experimental-specifier-resolution=node server/index.js",
+    "client_build": "npm i --prefix client && npm run build --prefix client",
+    "postinstall": "npm run client_build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nziranziza/fst.git"
+  },
+  "keywords": [
+    "tic-tac-toe",
+    "naughts-and-crosses",
+    "api"
+  ],
+  "author": "Nziranziza",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Nziranziza/fst/issues"
+  },
+  "homepage": "https://github.com/Nziranziza/fst#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  },
+  "type": "module",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
